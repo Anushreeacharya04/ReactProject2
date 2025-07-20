@@ -1,0 +1,26 @@
+/* src/components/Footer/Footer.css */
+.app-footer {
+  background-color: #222;
+  opacity: 0.75;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  text-align: center;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+}
+
+.app-footer p {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.app-footer .social-links a {
+  color: #ccc;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.app-footer .social-links a:hover {
+  color: white;
+}

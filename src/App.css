@@ -1,0 +1,94 @@
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box; 
+}
+
+html, body {
+  position: relative;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-content {
+  flex: 1;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-list-container {
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 20px;
+  justify-content: center; 
+  padding: 20px 0; 
+}
+
+.video-background-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#strawberry-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%; 
+  width: auto; 
+  height: auto; 
+  z-index: -100; 
+  background-size: cover; 
+}
+
+.content-overlay {
+  position: relative; 
+  z-index: 10;       
+  color: white;     
+  text-align: center; 
+  padding: 1rem;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1; 
+  font-size: 46px;
+}
+
+.learn-more-button {
+  display: inline-block; 
+  background-color: #fdfbfa; 
+  opacity: 0.5;
+  padding: 12px 25px;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.learn-more-button:hover {
+  background-color: #fefcfc; 
+  transform: translateY(-2px);
+}
+
+.learn-more-button:active {
+  background-color: #fcf9f8;
+  transform: translateY(0);
+}
